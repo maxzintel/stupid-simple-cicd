@@ -1,8 +1,3 @@
-Notes & To-Do:
-* What are the principals followed and accomplished here?
-  * Example: fetching secrets securely, maintaining infrastructure as code, ensuring things like autoscaling and monitoring are in place.
-* At what point is this EXACTLY the type of repository that I would want to come across? Such that its so clear what you have to do that the user doesn't even need to think, they can just implement knowing that this is comprehensive.
-
 # Stupid Simple CI/CD
 
 By Max Zintel - Email: maxz@hey.com (shoot me an email with any questions!)
