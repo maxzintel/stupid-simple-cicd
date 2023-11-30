@@ -58,15 +58,15 @@ This repository contains everything you need to set up an automated deployment p
    * Great! All your steps work locally. Time to automate them.
  
  6. Deploying via CI/CD
-   * The CI/CD process is triggered when changes are pushed to the main branch of your GitHub repository.
-   * Push Your Changes: Commit and push your changes to the main branch. Ideally via a PR that was reviewed by a coworker.
-   * Automatic Deployment: The GitHub Actions workflow defined in production.pipelines.yaml will automatically start. It performs the following steps:
-     * Checks out your code.
-     * Configures AWS credentials.
-     * Builds your Docker image and pushes it to AWS ECR.
-     * Updates the Docker image tag in AWS SSM.
-     * Runs Terraform to apply the changes to your infrastructure. This deploys the new image of your app to ECS and does so without lapses in availability.
+    * The CI/CD process is triggered when changes are pushed to the main branch of your GitHub repository.
+    * Push Your Changes: Commit and push your changes to the main branch. Ideally via a PR that was reviewed by a coworker.
+    * Automatic Deployment: The GitHub Actions workflow defined in production.pipelines.yaml will automatically start. It performs the following steps:
+      * Checks out your code.
+      * Configures AWS credentials.
+      * Builds your Docker image and pushes it to AWS ECR.
+      * Updates the Docker image tag in AWS SSM.
+      * Runs Terraform to apply the changes to your infrastructure. This deploys the new image of your app to ECS and does so without lapses in availability.
     
   7. Monitoring the Deployment
-    * Monitor the GitHub Actions workflow (via the Actions tab at the top of this screen). Ensure it completes successfully. Once it completes, that means the new image (and task definition) has been pushed and deployed to ECS.
+     * Monitor the GitHub Actions workflow (via the Actions tab at the top of this screen). Ensure it completes successfully. Once it completes, that means the new image (and task definition) has been pushed and deployed to ECS.
      * Navigate to the AWS ECS Console and watch the deployment process to ensure it proceeds as expected. One thing you don't have (included in this repository) is logging and monitoring setup to properly understand what is going on inside your ECS Task. If you would like help setting this up, reach out! My contact info is near the top of this README.
