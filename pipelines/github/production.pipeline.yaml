@@ -50,7 +50,7 @@ jobs:
       - name: Store Docker Image Tag in SSM
         id: store-ssm
         run: |
-          aws ssm put-parameter --name "/${{ env.ENV }}/dollar-store-kids-metadata-server/config/imageTag" --value "${{ github.sha }}" --type "String" --overwrite
+          aws ssm put-parameter --name "/${{ env.ENV }}/${env.APP}/config/imageTag" --value "${{ github.sha }}" --type "String" --overwrite
 
       - name: Setup Terraform
         uses: hashicorp/setup-terraform@v3
