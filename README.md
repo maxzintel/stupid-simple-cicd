@@ -26,7 +26,7 @@ This repository contains everything you need to set up an automated deployment p
 
 ### Step by Step
 
-1. Clone the Repository: Begin by cloning this repo to your local machine or forking it into your GitHub account.
+1. Clone the Repository: Begin by cloning this repo to your local machine or forking it into your GitHub account. Change the path for the GitHub Actions pipeline from `pipelines/github` to `.github` so that GitHub will recognize it automatically as a pipeline it is responsible for.
 2. AWS Configuration: Set up an ECS cluster in your AWS account.
    * Name this cluster appropriately (e.g., YourCluster). Note: there is a lot of complexity here and a lot to consider. If you would like some assistance in setting your ECS cluster up, reach out!
    * You'll need to create an ECR repository in AWS as well, and create necessary AWS resources like a VPC, subnets, security groups, IAM roles, etc... Again, this can be a lot, and its really easy to make a mistake that will make your application vulnerable to attacks, so, **please reach out if you are not sure on any of this**.
