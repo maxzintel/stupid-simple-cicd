@@ -17,6 +17,8 @@ This repository contains everything you need to set up an automated deployment p
 * GitHub Action Workflows: Automated workflows for continuous integration and deployment.
 * Comprehensive Documentation: Documentation that a 5 year old could use to set this up for your company.
 
+**Need something more robust? We are working on building out more free-to-use repositories to support your CI/CD and DevOps needs! Check out [Stupid Simple Autoscaling](https://github.com/maxzintel/stupid-simple-autoscaling)**
+
 ## Let's Get Started!
 
 ### Prerequisites
